@@ -26,6 +26,7 @@
 
     static int rastgeleSayiGetir(int minimum, int maximum)
     {
+        //birim zamanda bir iş.
         Random randomGenerator = new Random();
         return randomGenerator.Next(minimum, maximum);
     }
