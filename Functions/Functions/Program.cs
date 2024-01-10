@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using Functions;
+
+public class Program
 {
     public static void Main(string[] args)
     {
@@ -19,6 +21,9 @@
             Console.WriteLine(yonlendirme);
 
         } while (yonlendirme != Durum.Bildiniz);
+
+        ProductService productService = new ProductService();
+        var avg = productService.GetAveragePrice();
 
     }
 
