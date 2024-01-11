@@ -28,12 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            buttonCreate = new Button();
+            textBoxPrice = new TextBox();
+            textBoxName = new TextBox();
+            SuspendLayout();
+            // 
+            // buttonCreate
+            // 
+            buttonCreate.Location = new Point(70, 194);
+            buttonCreate.Name = "buttonCreate";
+            buttonCreate.Size = new Size(75, 23);
+            buttonCreate.TabIndex = 0;
+            buttonCreate.Text = "Ekle";
+            buttonCreate.UseVisualStyleBackColor = true;
+            buttonCreate.Click += buttonCreate_Click;
+            // 
+            // textBoxPrice
+            // 
+            textBoxPrice.Location = new Point(45, 165);
+            textBoxPrice.Name = "textBoxPrice";
+            textBoxPrice.Size = new Size(100, 23);
+            textBoxPrice.TabIndex = 1;
+            // 
+            // textBoxName
+            // 
+            textBoxName.Location = new Point(45, 138);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(100, 23);
+            textBoxName.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(184, 295);
+            Controls.Add(textBoxName);
+            Controls.Add(textBoxPrice);
+            Controls.Add(buttonCreate);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button buttonCreate;
+        private TextBox textBoxPrice;
+        private TextBox textBoxName;
     }
 }
